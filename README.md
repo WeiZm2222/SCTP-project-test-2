@@ -8,5 +8,6 @@ Steps:
 1) Created backend.tf file to store terraform statefile. 
 2) Created main.tf file to create s3 bucket to host website
 3) Create bucket-policy.tf and provider.tf 
-4) Terraform init, plan, apply successful => http://zmw-my-static-website46551.s3-website.us-east-1.amazonaws.com
-5) Use "aws s3 sync . s3://zmw-my-static-website46551 --delete" command to update s3 bucket with static website 
+4) Terraform init, plan, apply successful 
+5) Repeat steps for dev and uat environments. 
+6) upload website using aws cli command "aws s3 sync static-website/ s3://sctp-c3-group1-dev --delete"
